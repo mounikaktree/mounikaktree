@@ -1,0 +1,110 @@
+sudo git checkout -b developer master
+git push --set-upstream origin developer
+development server
+======================
+Site url: https://fabricaredev.ddecor.com/
+host: 172.16.1.85
+Login Id. embitel
+Password: Emb!tel234
+https://fabricaredev.ddecor.com/deadmin
+ddecoradmin/P@ssw0rd
+ddecorusermarch/P@ssw0rd@1234
+
+Site url: https://dev.ddecorhomefabrics.com/
+host: 172.16.1.86
+Login Id. embitel
+Password: embitel
+pabitra.embitel
+Pab!tr@23
+php bin/magento admin:user:create --admin-user=manish --admin-password=WeLoveMagento123 --admin-email=hi@mageplaza.com --admin-firstname=Mageplaza --admin-lastname=Family
+if 504 bad gateway restart nginx
+Live server
+===============
+Site url: https://fabricare.ddecor.com/
+host: 172.16.1.81
+Login Id. embitel
+Password: embitel
+https://fabricare.ddecor.com/deadmin/
+ddecoruser / P@ssw0rd
+sudo git remote add origin https://nextgen.ddecor.com/gitlab/pranay.doshi/fabricare.git
+
+Site url: https://www.ddecorhomefabrics.com/
+host: 172.16.1.82
+Login Id. embitel
+Password: embitel
+php bin/magento admin:user:create --admin-user=pabitra --admin-password=Embiteluser2023 --admin-email=hi@mageplaza.com --admin-firstname=Mageplaza --admin-lastname=Family
+smtp
+=========
+
+fabricare@ddecor.com / Fabr!car6
+
+Tenant id:                  d6ee1257-2482-4f1e-b730-bd2edc9184b0
+Application (client) ID:    1bdd8b34-64d8-4de9-955b-2e0dfbb547e2
+
+Secret ID:                  452dd049-8431-422a-9713-27fb7576f8bf
+
+SMS API
+============
+Your 2Factor SMS OTP account has been setup and credentials are as follows,
+
+CPanel: https://2Factor.in/CP/
+Username: 8208 11872
+Password: 8004
+b331a6d9-4599-11ee-addf-0200cd936042 ---------live
+   
+cd7abaff-4611-11ee-addf-0200cd936042 ---------trial
+
+UPDATE core_config_data SET value = 'https://dev.ddecorhomefabrics.com/' WHERE path LIKE 'web/unsecure/base_url';
+https://dev.ddecorhomefabrics.com/
+
+php 8.1
+composer2.1
+mysql  Ver 8.0.33
+elasticsearch 7.16
+magento2.4.4
+
+mysqldump -u ddecor -p ddecor > fabricare2610203.sql
+mysqldump -u ddecor -p ddecor url_rewrite > url_rewrite12062024.sql 
+
+mysqldump -u ddecor -p ddecor mageplaza_storelocator_location > mageplaza_storelocator_location.sql
+
+mageplaza_storelocator_location_enabled.sql
+
+UPDATE core_config_data SET value = 'http://latest.ddecor.com/' WHERE path LIKE 'web/unsecure/base_url'; 
+
+UPDATE core_config_data SET value = 'http://latest.ddecor.com/' WHERE path LIKE 'web/secure/base_url'; 
+
+UPDATE core_config_data SET value = 'http://local.ddecorhomefabrics.com/' WHERE path LIKE 'web/secure/base_link_url'; 
+
+UPDATE core_config_data SET value = 'http://local.ddecorhomefabrics.com/' WHERE path LIKE 'web/unsecure/base_link_url'; 
+
+location / {
+    return 301 http://fabricare.ddecor.com;
+  }
+  https://103.145.111.128
+  
+ sudo php bin/magento setup:db-declaration:generate-whitelist --module-name=Embitel_Customer
+ 
+ 
+ https://www.lonelypx.com/how-to-send-an-e-mail-with-php-mailer-and-microsoft-oauth-2-0/
+https://www.example-code.com/phpExt/office365_smtp_send_email.asp
+
+https://amasty.com/smtp-email-settings-for-magento-2.html
+ 
+ lunchdate= 2020
+ 
+ 17506
+ 
+openssl x509 -noout -modulus -in /etc/ssl/ssl.crt
+openssl rsa -noout -modulus -in /etc/ssl/ssl.key
+copy content from one file to other file
+cat /var/www/html/ssl.crt > ssl.crt
+
+instagram feed
+===================
+https://graph.instagram.com/me/media?access_token=IGQWRQUVlrU0xldGdhQ0VZATEo2RjlUYTRvUS1tUnlyTncyWGYtN3NiUGR1U2gxOFl4SjQ4cG9SaEg2ZAWlWN1l4TjBhV2E4WHhKMXRXVzlsdS1wc1o5SWNkX19nZA2lKRDhMWXpCX1FNSkpYQzVLN2NWX1JpZADA1NHcZD&fields=id%2C+caption%2C+media_type%2C+media_url%2C+permalink%2C+thumbnail_url
+Instagram account
+=====================
+User: fabricarebyddecor
+Password: Fabricarex123
+

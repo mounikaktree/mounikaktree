@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.css'>
+	 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<body>
+<style>
+body{
+	font-family: sans-serif;
+	padding: 0px;
+	padding-top: 65px;
+	margin: 0px;
+}
+p{ margin: 0px; }
+header{
+    background-color: #286090;
+    color: #FFFFFF;
+	position: fixed;
+	top: 0;
+    z-index: 999;
+    width: 100%;
+}
+#menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 25px;
+    z-index: 1;
+    user-select: none;
+}
+#menuToggle span {
+    display: flex;
+    width: 29px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+}
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+	height: 55px;
+	padding: 5px 0px;
+}
+.header-menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.header-menu .header-menu-nav{
+     padding: 0;
+    list-style: none;
+    display: flex;
+}
+.header-menu .header-menu-nav li a{
+	font-size: 14px;
+    padding: 0 8px;
+    text-decoration: none;
+    color: #fff;
+}
+.header-menu  .top_navbar a{
+	font-size: 14px;
+    padding: 0 8px;
+    text-decoration: none;
+    color: #fff;
+}
+.banner-carousel img{ width: 100%; }
+.Dheading{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+.why-choose{
+    width: 80%;
+    margin: 0 auto;
+    padding: 35px 0;
+}
+.why-choose  .why-choose-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.why-choose  .why-choose-inner .why-choose-section{
+    width: 31%;
+    text-align: center;
+    font-weight: 600;
+}
+.why-choose  .why-choose-inner .why-choose-section .firstPara{
+    font-size: 24px;
+    color: #286090;
+    margin: 5px 0;
+}
+.why-choose  .why-choose-inner .why-choose-section .secondPara{
+        font-size: 16px;
+}
+.start-preparation{
+	width: 80%;
+    margin: 0 auto;
+    padding: 35px 0;
+}
+.start-preparation  .start-preparation-inner{
+    display: flex;
+    justify-content: center;
+	flex-wrap: wrap;
+}
+.start-preparation  .start-preparation-inner .start-preparation-section{
+    width: 29%;
+    background: #286090;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;	
+    margin: 0 7px 15px;
+	background-position: 100% 100%;
+    background-size: cover;
+}
+.start-preparation  .start-preparation-inner .start-preparation-section:nth-child(1){
+	background-image: url('./images/Online-Classroom.webp');
+}
+.start-preparation  .start-preparation-inner .start-preparation-section:nth-child(2){
+	background-image: url('./images/Test-Series.webp');
+}
+.start-preparation  .start-preparation-inner .start-preparation-section:nth-child(3){
+	background-image: url('./images/free-videos.webp');
+}
+.start-preparation  .start-preparation-inner .start-preparation-section:nth-child(4){
+	background-image: url('./images/previous-year.webp');
+}
+.start-preparation  .start-preparation-inner .start-preparation-section:nth-child(5){
+	background-image: url('./images/free-quiz.webp');
+}
+.start-preparation  .start-preparation-inner .start-preparation-section .firstPara{
+     font-weight: 600;
+    margin: 0 0 2px;
+}
+.start-preparation  .start-preparation-inner .start-preparation-section .secondPara{
+    width: 70%;
+	height: 60px;
+	font-size: 14px;
+}
+.start-preparation  .start-preparation-inner .start-preparation-section a{
+	font-size: 14px;
+	color: #fff;
+    font-weight: 600;
+}
+.select-exam{
+	width: 80%;
+    margin: 0 auto;
+    padding: 35px 0;
+}
+.select-exam .ui-tabs-nav{
+	display: flex;
+    list-style: none;
+    overflow: auto;
+    margin: 0 0 35px;
+    padding: 0 0 12px 0;
+}
+.select-exam .ui-tabs-nav li a{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 15px;
+    background: #f2f6fc;
+    color: #10324a;
+    padding: 13px 17px;
+    margin-right: 10px;
+    border-radius: 100px;
+    text-decoration: none;
+	min-width: 110px;
+    justify-content: center;
+}
+.select-exam .ui-tabs-nav li:last-child a{ margin: 0px; }
+.select-exam .ui-tabs-nav li.ui-tabs-active a{
+	background: #bd0745;
+    color: #fff;
+}
+.select-exam .tab-content-sec{
+    display: flex;
+    flex-wrap: wrap;
+}
+.select-exam .tab-content-sec a{
+	 display: flex;
+    align-items: center;
+    width: 17.2%;
+    padding: 12px;
+    margin: 0 8px 16px;
+	color: #000;
+    box-shadow: 0 -1px 8px 0 hsla(0,0%,76%,.5);
+    text-decoration: none;
+}
+.select-exam .tab-content-sec a img{
+    width: 48px;
+    height: 48px;
+}
+.select-exam .tab-content-sec a span{
+    padding-left: 15px;
+}
+.our-numbers{
+	background: #f2f6fc;
+}
+.our-numbers .our-numbers-inner{
+	width: 80%;
+    margin: 0 auto;
+    padding: 45px 0;
+	color: #282828;
+}
+.our-numbers .registered-student{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-bottom: 32px;
+}
+.our-numbers .registered-student .count{
+    font-size: 48px;
+    font-weight: 600;
+    color: #ffbc00;
+    margin: 0 16px 0 0;
+}
+.our-numbers .registered-result{
+    display: flex;
+    justify-content: space-between;
+}
+.blue{ color: #3c5a99; }
+.green{ color: #50b167; }
+.red{ color: #e93622; }
+.our-numbers .registered-result .inner{
+    width: 30%;
+    background: #fff;
+    padding: 16px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+.our-numbers .registered-result .inner .count{     font-size: 36px;  }
+.our-numbers .registered-result .inner .text{     font-size: 22px;  }
+footer{
+	background-color: #281838;
+	color: #fff;
+	padding: 35px 0px;
+}
+footer .footerListInner{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+}
+footer .footerListInner .footerList{
+	width: 20%;
+}
+footer .footerListInner .footerList:last-child{
+	 display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .footerListInner .footerList:last-child span{
+	padding-top: 10px;
+}
+footer .footerListInner .footerList .title{
+	font-size: 20px;
+	color: #fff;
+}
+footer ul{
+    padding: 0px;
+    list-style: none;
+}
+footer ul li a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+	
+</style>
+<header class="header">
+	<div class="wrapper header-wrapper clearfix">
+		 <div id="menuToggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		 <div class="logo">
+			<a href="https://bioxchamps.in/index?page=welcome"><img src="https://bioxchamps.in//images/logo.jpeg" alt="Pabitra" title="Online Examination System - Pabitra"></a>
+		</div>
+		<div class="header-menu">
+			<ul class="header-menu-nav">
+				<li><a href="">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact US</a></li>
+			</ul>
+			<div class="top_navbar">
+				<a href="">Login</a> / <a href="">Register</a>
+			</div>	
+		</div>
+	 </div>
+</header>
+<div class="banner-carousel">
+  <div class="slide-content"><img src="https://bioxchamps.in/images/biology-banner-iStock-483098985.jpg" alt="banner image"></div>
+  <div class="slide-content"><img src="https://bioxchamps.in/images/biology-banner-iStock-483098985.jpg" alt="banner image"></div>
+  <div class="slide-content"><img src="https://bioxchamps.in/images/biology-banner-iStock-483098985.jpg" alt="banner image"></div>
+  <div class="slide-content"><img src="https://bioxchamps.in/images/biology-banner-iStock-483098985.jpg" alt="banner image"></div>
+</div>
+
+<div class="why-choose">
+	<h3 class="Dheading">Why Choose Bio Champs Exam Prep?</h3>
+	<div class="why-choose-inner">
+		<div class="why-choose-section">
+			<img src="./images/online-class.png" alt="online-class" />
+			<p class="firstPara">Online Classroom Program</p>
+			<p class="secondPara">by Top Faculty</p>
+		</div>
+		<div class="why-choose-section">
+			<img src="./images/study-material.png" alt="study-material" />
+			<p class="firstPara">Comprehensive Study Material</p>
+			<p class="secondPara">for All Exams</p>
+		</div>
+		<div class="why-choose-section">
+			<img src="./images/patter-test.png" alt="patter-test" />
+			<p class="firstPara">Latest Pattern Test Series</p>
+			<p class="secondPara">with Detailed Analysis</p>
+		</div>
+	</div>
+</div>
+
+<div class="start-preparation">
+	<h3 class="Dheading">Start your preparation</h3>
+	<div class="start-preparation-inner">
+		<div class="start-preparation-section">
+			<p class="firstPara">Online Classroom Program</p>
+			<p class="secondPara">Live & Recorded courses by Top Faculty</p>
+			<a href="/">Explore Courses</a>
+		</div>
+		<div class="start-preparation-section">
+			<p class="firstPara">Test Series</p>
+			<p class="secondPara">Practice unlimited mock tests and get your All India Rank</p>
+			<a href="/">Explore Courses</a>
+		</div>
+		<div class="start-preparation-section">
+			<p class="firstPara">Free Videos</p>
+			<p class="secondPara">High Quality Content for Complete Conceptual Clarity</p>
+			<a href="/">Explore Courses</a>
+		</div>
+		<div class="start-preparation-section">
+			<p class="firstPara">Previous Year Papers</p>
+			<p class="secondPara">Practice past years' question papers and get exam ready</p>
+			<a href="/">Explore Courses</a>
+		</div>
+		<div class="start-preparation-section">
+			<p class="firstPara">Free Quizzes</p>
+			<p class="secondPara">Attempt topic wise quizzes for improving your score</p>
+			<a href="/">Explore Courses</a>
+		</div>
+	</div>
+</div>
+
+<div class="select-exam">
+	<h3 class="Dheading">Select your Exam</h3>
+	<div id="select-exam-tabs">
+		 <ul>
+			<li><a href="#Upcoming">Upcoming</a></li>
+			<li><a href="#Bank">Bank</a></li>
+			<li><a href="#Gate">Gate</a></li>
+		 </ul>
+		 <div id="Upcoming" class="tab-content-sec">
+			<a href="">
+				<img src="./images/IBPS-Clerk.png" alt=""> 
+				<span>IBPS Clerk</span>
+			</a>
+		 </div>
+		 <div id="Bank" class="tab-content-sec"> 
+			<a href="">
+				<img src="./images/IBPS-Clerk.png" alt=""> 
+				<span>Bank Clerk</span>
+			</a>
+		 </div>
+		 <div id="Gate" class="tab-content-sec">
+			<a href="">
+				<img src="./images/IBPS-Clerk.png" alt=""> 
+				<span>Gate Clerk</span>
+			</a>
+		 </div>
+	</div>
+</div>
+
+<div class="our-numbers">
+	<div class="our-numbers-inner">
+		<h3 class="Dheading">Our Numbers Speak For Us</h3>
+		<div class="registered-student">
+			<span class="count">3Cr+</span>
+			<span class="text">Registered <br> Students</span>
+		</div>
+		<div class="registered-result">
+			<div class="inner blue">
+				<span class="count">3.85 Cr+</span>
+				<span class="text">Video Classes attended</span>
+			</div>
+			<div class="inner green">
+				<span class="count">3.85 Cr+</span>
+				<span class="text">Video Classes attended</span>
+			</div>
+			<div class="inner red">
+				<span class="count">3.85 Cr+</span>
+				<span class="text">Video Classes attended</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<div class="footerListInner">
+		<div class="footerList">
+			<span class="title">Our Apps</span>
+			<ul>
+				<li><a href="">The Exam Preparation App</a></li>
+			</ul>
+		</div>
+		<div class="footerList">
+			<span class="title">POPULAR EXAMS</span>
+			<ul>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</div>
+		<div class="footerList">
+			<span class="title">SSC AND BANK</span>
+			<ul>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</div>
+		<div class="footerList">
+			<span class="title">OTHER EXAMS</span>
+			<ul>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</div>
+		<div class="footerList">
+			<a href="https://bioxchamps.in/index?page=welcome"><img src="https://bioxchamps.in//images/logo.jpeg" alt="Pabitra" title="Online Examination System - Pabitra"></a>
+			<span>GradeStack Learning Pvt. Ltd.</span>
+		</div>
+	</div>
+</footer>
+
+<script>
+	$('.banner-carousel').slick({
+		arrows: false,
+		dots: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+  });
+  $( "#select-exam-tabs" ).tabs();
+</script>
+</body>
+</html>
+
+
+

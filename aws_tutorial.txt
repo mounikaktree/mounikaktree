@@ -1,0 +1,39 @@
+https://gehc2.udemy.com/course/valaxy-devops/learn/lecture/29943530#overview
+https://gehc2.udemy.com/course/aws-networking-amazon-vpc-aws-vpn-hybrid-cloud/learn/lecture/24158832#overview
+https://gehc2.udemy.com/course/networking-in-aws/learn/lecture/13999632#overview
+https://gehc2.udemy.com/course/aws-certified-solutions-architect-associate-step-by-step/learn/lecture/20087470#overview
+https://gehc2.udemy.com/course/docker-certified-associate/learn/lecture/13880150#overview
+
+https://gehc2.udemy.com/course/aws-certified-solutions-architect-associate-step-by-step/learn/lecture/20075130#overview
+python
+============
+https://www.udemy.com/course/pythonforbeginners/
+
+https://aws.amazon.com/certification/exams/
+
+
+aws need to learn
+======================
+https://gehc2.udemy.com/course/aws-certified-solutions-architect-associate-step-by-step/learn/lecture/20120440?start=360#overview
+
+vpc:-
+https://gehc2.udemy.com/course/networking-in-aws/learn/lecture/13999632?start=1770#overview
+
+
+Teraform
+=============
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+https://gehc2.udemy.com/course/terraform-beginner-to-advanced/learn/lecture/15588096#overview
+
+kubernetes
+================
+https://gehc2.udemy.com/course/kubernetes-made-easy/learn/lecture/14189257#overview(Srinath Challa)
+
+project AR shankar
+==================
+https://gehc2.udemy.com/course/valaxy-devops/learn/lecture/29964326#overview
+
+Linux AR shankar
+================
+https://gehc2.udemy.com/course/valaxy-linux/?referralCode=CD072B64EC18473623B8
+

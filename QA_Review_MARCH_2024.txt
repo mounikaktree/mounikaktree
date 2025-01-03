@@ -1,0 +1,43 @@
+Checklist
+====================
+* Unit Test Case
+* Time sheet MARCH2024
+* Code Quality check
+* Review log commited to svn
+
+https://nextgen.ddecor.com/gitlab/kapil.khatau/ddecor-nextgen/-/merge_requests/1320
+
+Unit test
+=================
+https://pmtool.embitel.in/issues/70067
+https://pmtool.embitel.in/issues/70510
+
+
+MARCH 2024 Time sheet updated
+
+Code Quality check
+====================
+code review 21 MARCH 2024
+code review 13 MARCH 2024
+https://outlook.office.com/mail/id/AAQkADY3NzI4MmIwLTk3NzUtNDU1Yi04NjllLWVhNWYyZTM5YWFhNAAQAKnKp5OaY%2F5BsJFyp92UV1E%3D
+https://nextgen.ddecor.com/gitlab/kapil.khatau/ddecor-nextgen/-/merge_requests/1305
+
+I have integrated php cs fixer in php strom
+
+Restrict bad code using grum php
+
+/var/www/html/emb_codesniffer/CodeSniffer
+ $> /var/www/html/magento-coding-standard/vendor/bin/phpcs --standard=Magento2 /var/www/html/fabricare/app/code/Codeinclusive/Custom/Block/Product/View/Attributes.php
+
+/var/www/html/deployment/hotfix18082022/grumphp.yml
+
+
+Svn access
+===============
+svn updated(/home/emb-pabirou/ddcr_supp/ecdde21532.ddcr_supp/trunk/Records)
+/home/emb-pabirou/ddcr_supp/ecdde21532.ddcr_supp/trunk/Records
+username: emb-pabirou
+Password: Yxnd358#%*
+
+Review log commited to svn
+
